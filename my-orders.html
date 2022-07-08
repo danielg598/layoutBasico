@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+        }
+        .container{
+            width: auto;
+            height: auto;
+            display: grid;
+            place-items: center;
+        }
+        .container .container-myOrders{
+            width: 460px;
+        }
+        .container .container-myOrders .title{
+            /* margin-bottom: 76px; */
+            margin: 24px 0 0 12px;
+        }
+        .articles {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .articles .description{
+            display: flex;
+            flex-direction: column;
+        }
+        .articles .description span:nth-child(1){
+            font-weight: bold;
+            font-size: var(--lg);
+        }
+        .articles .description span:nth-child(2){
+            font-weight: 300;
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+        .articles .price{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .articles .price span{
+            font-weight: bold;
+            font-size: var(--lg);
+        }
+        @media (max-width:640px){
+            .container .container-myOrders .title{
+            display: none;
+            }
+            .container .container-myOrders{
+            width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="container-myOrders">
+            <h1 class="title">My orders</h1>
+            <div class="articles">
+                <p class="description">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="price">
+                    <span>$ 123.00</span>
+                </p>
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+            <div class="articles">
+                <p class="description">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="price">
+                    <span>$ 123.00</span>
+                </p>
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+            <div class="articles">
+                <p class="description">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="price">
+                    <span>$ 123.00</span>
+                </p>
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+            <div class="articles">
+                <p class="description">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="price">
+                    <span>$ 123.00</span>
+                </p>
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+            <div class="articles">
+                <p class="description">
+                    <span>04.25.21</span>
+                    <span>6 articles</span>
+                </p>
+                <p class="price">
+                    <span>$ 123.00</span>
+                </p>
+                <img src="/icons/flechita.svg" alt="">
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

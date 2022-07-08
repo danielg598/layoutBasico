@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+        }
+        .container{
+            width: auto;
+            height: auto;
+            display: grid;
+            place-items: center;
+        }
+        .container .container-myOrder{
+            width: 460px;
+        }
+        .container .container-myOrder .title{
+            margin-bottom: 76px;
+        }
+        .container .container-myOrder .articles{
+            display: flex;
+            justify-content: space-between;
+            background: var(--text-input-field);
+            border-radius: 6px;
+            margin-bottom: 42px;
+        }
+        .container .container-myOrder .articles .first-list p{
+            margin: 0;
+            padding: 0;
+        }
+        .container .container-myOrder .articles .first-list p:nth-child(1){
+            padding-top: 10px;
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: var(--md);
+        }
+        .container .container-myOrder .articles .first-list p:nth-child(2){
+            margin-left: 10px;
+            padding-top: 3px;
+            padding-bottom: 10px;
+            font-weight: 300;
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+        .container .container-myOrder .articles .second-list p{
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: var(--md);
+        }
+        .container .container-myOrder .articles-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container .container-myOrder .articles-list .articles-description{
+            display: flex;
+            align-items: center;
+            margin-bottom: 22px;
+        }
+        .container .container-myOrder .articles-list .articles-description img{
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .container .container-myOrder .articles-list .articles-description p{
+            margin-left: 20px;
+            font-weight: 300;
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+        .container .container-myOrder .articles-list .price{
+            font-weight: bold;
+            font-size: var(--md);
+        }
+        @media (max-width:640px){
+            .container .container-myOrder .title{
+                display: none;
+            }
+            .container .container-myOrder{
+            width: 340px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="container-myOrder">
+            <h1 class="title">My order</h1>
+            <div class="articles">
+                <div class="first-list">
+                    <p>04.25.2021</p>
+                    <p>6 articles</p>
+                </div>
+                <div class="second-list">
+                    <p>$ 560,00</p>
+                </div>
+            </div>
+            <div class="articles-list">
+                <div class="articles-description">
+                    <img src="https://images.pexels.com/photos/12092806/pexels-photo-12092806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p>round self</p>
+                </div>
+                <div class="price">
+                    <p>$ 120,00</p>
+                </div>
+            </div>
+            <div class="articles-list">
+                <div class="articles-description">
+                    <img src="https://images.pexels.com/photos/12092806/pexels-photo-12092806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p>round self</p>
+                </div>
+                <div class="price">
+                    <p>$ 120,00</p>
+                </div>
+            </div>
+            <div class="articles-list">
+                <div class="articles-description">
+                    <img src="https://images.pexels.com/photos/12092806/pexels-photo-12092806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p>round self</p>
+                </div>
+                <div class="price">
+                    <p>$ 120,00</p>
+                </div>
+            </div>
+            <div class="articles-list">
+                <div class="articles-description">
+                    <img src="https://images.pexels.com/photos/12092806/pexels-photo-12092806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p>round self</p>
+                </div>
+                <div class="price">
+                    <p>$ 120,00</p>
+                </div>
+            </div>
+            <div class="articles-list">
+                <div class="articles-description">
+                    <img src="https://images.pexels.com/photos/12092806/pexels-photo-12092806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p>round self</p>
+                </div>
+                <div class="price">
+                    <p>$ 120,00</p>
+                </div>
+            </div>
+            <div class="articles-list">
+                <div class="articles-description">
+                    <img src="https://images.pexels.com/photos/12092806/pexels-photo-12092806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p>round self</p>
+                </div>
+                <div class="price">
+                    <p>$ 120,00</p>
+                </div>
+            </div>
+            <div class="articles-list">
+                <div class="articles-description">
+                    <img src="https://images.pexels.com/photos/12092806/pexels-photo-12092806.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    <p>round self</p>
+                </div>
+                <div class="price">
+                    <p>$ 120,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
